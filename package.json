@@ -7,7 +7,9 @@
     "build": "webpack --config webpack.config.js",
     "start": "webpack-dev-server --open",
     "test": "mocha --require babel-polyfill --compilers js:babel-register,jsdom-global/register 'app/**/*.test.js'",
+    "test:notifications": "yarn test -- --growl",
     "test:watch": "yarn test -- --watch",
+    "test:watch:notifications": "yarn test:watch -- --growl",
     "prettier": "prettier --single-quote --write 'app/**/*.js'"
   },
   "devDependencies": {
