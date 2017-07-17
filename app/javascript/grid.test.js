@@ -1,8 +1,8 @@
 import { Block, COLOURS } from './grid';
 import { assert } from 'chai';
 
-describe('Block', () => {
-  it('should be created with correct coordinates and one of the valid colours', () => {
+describe('Block', function() {
+  it('is created with correct coordinates and one of the valid colours', function() {
     let testCoords = [[1, 2], [4, 9], [0, 0]];
 
     testCoords.forEach(testCoord => {
@@ -14,6 +14,6 @@ describe('Block', () => {
   });
 });
 
-describe('BlockGrid', () => {
-  xit('should be implemented!', () => {});
+describe('BlockGrid', function() {
+  it('should be implemented!', function() {});
 });
