@@ -12,28 +12,23 @@ body {
     padding: 0;
 }
 
-#grid {
+#gridEl {
     width: 100%;
     height: 100%;
     background: grey;
+    display: flex;
+    flex-direction: row;
 }
 
 .col {
-    background: grey;
-    float:left;
-    width: 10%;
+    flex-shrink: 1;
+    flex-grow: 1;
     height: 100%;
-}
-.block {
-    width: 100%;
-    height: 10%;
-    background: red;
-    float: left;
-    margin: 0;
-    padding: 0;
-    transition: all;
+
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-.active {
-    -webkit-box-shadow: inset 0 0 10px #000000;
+.block {
+    width: 100%;
 }
